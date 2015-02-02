@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - diary@localhost" uuid="e319f541-6e21-434b-8d76-6f138e04ee97">
+    <database-info product="MySQL" version="5.6.22-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="diary"/>
+    <table name="accaunting" schema="" catalog="diary" type="TABLE">
+      <column name="date" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="cart_payment" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="payment" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="bonus_payment" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="services_payment" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="salary" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="purchase" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="bonus" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="expense" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="account_balance" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="balance_on_hand" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="dividend" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="pour" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <primary-key name="PRIMARY" columns="date"/>
+    </table>
+    <table name="debt" schema="" catalog="diary" type="TABLE">
+      <column name="lend" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="back" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="id_operation" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id_operation"/>
+    </table>
+    <table name="good" schema="" catalog="diary" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
